@@ -18,6 +18,10 @@ module.exports = {
   		],
   		serif: [
   			'Times New Roman'
+  		],
+  		playground: [
+  			'PP Playground',
+  			'sans-serif'
   		]
   	},
   	extend: {

@@ -103,10 +103,10 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="" ref={vantaRef}>
+    <section id="home" className="relative" ref={vantaRef}>
       <div className="container relative">
         <div className="flex items-center flex-col">
-          <div className="flex flex-col items-center justify-center min-h-[90vh] md:min-h-screen">
+          <div className="flex flex-col items-center justify-center min-h-[100vh] md:min-h-[110vh]">
             <motion.h1
               className="hero__heading"
               onAnimationComplete={() => setAnimationComplete(true)}
@@ -160,6 +160,8 @@ const HeroSection = () => {
           </ul>
         </div>
       </div>
+      {/* Gradient fade overlay for smooth transition */}
+      <div className="absolute bottom-0 left-0 right-0 h-64 pointer-events-none bg-gradient-to-b from-transparent via-white/50 to-white dark:via-primary/50 dark:to-primary"></div>
     </section>
   );
 };

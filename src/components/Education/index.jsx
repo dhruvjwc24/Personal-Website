@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const educationData = [
   {
-    section: "University of Michigan, Computer Science and Engineering",
+    section: "University of Michigan \nComputer Science and Engineering",
     location: "Ann Arbor, MI",
     degree: "Bachelor of Science in Computer Science, Minor in Mathematics",
     year: "2027",
@@ -22,16 +22,14 @@ const educationData = [
         "EECS 376 - Algorithms",
       ],
       mathematics: [
-        "MATH 425 - Probability",
+      "MATH 425 - Probability",
         "MATH 215 - Multivariable & Vector Calculus",
         "MATH 214 - Linear Algebra",
-        "MATH 121 - Calculus 2",
-        "MATH 120 - Calculus 1",
       ],
     },
   },
   {
-    section: "University of Michigan, Stephen M. Ross School of Business",
+    section: "University of Michigan \nStephen M. Ross School of Business",
     location: "Ann Arbor, MI",
     degree: "Bachelor of Business Administration",
     year: "2027",
@@ -57,9 +55,10 @@ const activitiesData = {
   section: "Activities & Societies",
   location: "University of Michigan",
   items: [
+    "Shift Creator Space",
     "Michigan Investment Group - Quant Division",
-    "V1@Michigan Product Studio, Strategy Team",
-    "Phi Beta Lambda Professional Business Fraternity - Standards Board Member",
+    "V1@Michigan Product Studio",
+    "Phi Beta Lambda Professional Business Fraternity ",
     "Michigan Private Equity and Venture Capital Club",
   ]
 };
@@ -69,9 +68,7 @@ const scholarshipsData = {
   location: "University of Michigan",
   items: [
     "DECA Scholarship - DECA Inc's largest and most prestigious scholarship. 5 selected out of 10,000+ applicants for positive impact.",
-    "CFCU Scholarship",
-    "Local Scholarship",
-    "Regents Scholarships",
+    "11x Scholarship Winner",
     "William J. Branstrom Freshman Prize",
   ]
 };
@@ -97,7 +94,7 @@ const EducationList = () => {
           whileHover={{ scale: 1.02 }}
           className="cursor-pointer bg-gray-100 px-6 py-16 rounded-3xl h-full filter shadow-md relative md:px-10 dark:bg-primary-500 mb-12"
         >
-          <h6 className="text-3xl text-primary mb-4 dark:text-white font-display ">
+          <h6 className="text-3xl text-primary mb-4 dark:text-white font-display whitespace-pre-line">
             {section.section}
             <span className="mt-4 text-base flex items-center justify-start text-neutral-600 dark:text-neutral-300 font-normal">
               {section.location}
