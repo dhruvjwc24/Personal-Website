@@ -75,7 +75,7 @@ export default function NavBar() {
         <div className="flex justify-end items-center px-0 py-4 gap-4 sm:px-6 lg:py-8 lg:gap-10">
           <div className="mr-auto">
             <a href="#home" className="text-primary font-display text-2xl dark:text-white hover:opacity-80 transition-opacity">
-              ARYAN S.
+              DHRUV C.
             </a>
           </div>
           <div className="-mr-2 -my-2 lg:hidden">

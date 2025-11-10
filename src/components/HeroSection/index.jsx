@@ -7,17 +7,17 @@ const socials = [
   {
     logo: images.linkedinIcon,
     alt: "Linkedin Icon",
-    link: "https://www.linkedin.com/in/aryanshah1/",
+    link: "https://www.linkedin.com/in/dhruv-chandna/",
   },
   {
     logo: images.githubIcon,
     alt: "Github Icon",
-    link: "https://github.com/shah-aryan",
+    link: "https://github.com/dhruvjwc24",
   },
   {
     logo: images.emailIcon,
     alt: "Email Icon",
-    link: "mailto:shahary@umich.edu",
+    link: "mailto:dhruvjwc@umich.edu",
   },
 ];
 
@@ -111,7 +111,7 @@ const HeroSection = () => {
               className="hero__heading"
               onAnimationComplete={() => setAnimationComplete(true)}
             >
-              {['A', 'R', 'Y', 'A', 'N'].map((letter, index) => (
+              {['D', 'H', 'R', 'U', 'V'].map((letter, index) => (
                 <motion.span
                   key={index}
                   viewport={{ once: true }}

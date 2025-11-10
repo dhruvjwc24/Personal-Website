@@ -4,98 +4,23 @@ import { motion } from "framer-motion";
 
 const cardData = [
   {
-    company: "Susquehanna International Group",
-    period: "2025",
-    role: "Software Engineering Intern",
+    company: "Aspiring Scientists Summer Internship Program (George Mason University)",
+    period: "Jun. 2024 – Aug. 2024",
+    role: "Data Analyst",
     duties: [
-      "Performant Trade Execution Services",
+      "Retrieved GitHub interaction data from 660 blockchain organizations using SQL on Google BigQuery.",
+      "Analyzed correlations between project type, funding model, and governance structure on repository growth and engagement."
     ]
-  }, 
+  },
   {
-    company: "Scale AI",
-    period: "2025",
-    role: "Technical Advisor Intern",
+    company: "Emerging Diagnostic and Investigative Technologies (Dartmouth Hitchcock Medical Center)",
+    period: "Jun. 2023 – Aug. 2023",
+    role: "ML Engineer",
     duties: [
-      "Large Language Models",
+      "Trained an embedding model with PyTorch SimCLR for high-dimensional Whole Slide Image (WSI) data.",
+      "Developed a multimodal retrieval pipeline to return similar tissue images and associated pathology reports using scikit-learn KNN."
     ]
-  }, 
-  {
-    company: "Fidelity Investments",
-    period: "2024-2025",
-    role: "SOFTWARE ENGINEERING INTERN",
-    duties: [
-      "Statistical Modeling",
-    ]
-  }, 
-  {
-  company: "Stealth Startup",
-  period: "2024",
-  role: "SOFTWARE ENGINEERing intern",
-  duties: [
-   "HR Technology"
-  ]
- },
- {
-  company: "TECH5AI",
-  period: "2023",
-  role: "MACHINE LEARNING INTERN",
-  duties: [
-   "Self Vaccination Technology",
-  ],
-  link: "https://tech5.ai/"
- },
- {
-  company: "University of Michigan College of Engineering",
-  period: "2025",
-  role: "EECS 281 INSTRUCTIONAL AIDE",
-  duties: [
-   "Data Structures and Algorithms Instructional Aide"
-  ]
- },
- {
-  company: "Michigan Investment Group - Quant Division",
-  period: "2024",
-  role: "QUANTITATIVE DEVELOPER",
-  duties: [
-   "Limit Order Book and Portfolio Rebalancing"
-  ],
-  link: "https://www.michiganinvestmentgroup.com/"
- },
- {
-  company: "V1@Michigan",
-  period: "2024",
-  role: "SOFTWARE ENGINEER",
-  duties: [
-   "Building ride batching service powered by Uber - batchme.app",
-  ],
-  link: "https://www.michiganinvestmentgroup.com/"
- },
- {
-  company: "Sugar Events and Entertainment",
-  period: "2023-2024",
-  role: "WEDDING AND EVENT MC",
-  duties: [
-   "25+ Weddings, Parties, and Professional Events completed",
-  ],
-  link: "https://sugareventsent.com/"
- },
- {
-  company: "Michigan Private Equity and Venture Capital",
-  period: "2023",
-  role: "Associate",
-  duties: [
-   "Growth Equity Sourcing",
-  ],
-  link: "https://www.michiganpevc.org/"
- },
-//  {
-//   company: "Michigan DECA",
-//   period: "2022-2023",
-//   role: "State Officer",
-//   duties: [
-//    "Shine with Shah"
-//   ]
-//  }
+  }
 ];
 
 const TwoColumnCard = () => {
@@ -143,7 +68,7 @@ const TwoColumnCard = () => {
        </span>
       </div>
      </div> */}
-     <ul className="mt-2 text-sm  text-neutral-600 dark:text-neutral-300">
+     <ul className="mt-2 text-sm text-neutral-600 dark:text-neutral-300 list-disc list-outside pl-6 space-y-1">
       {card.duties.map((duty, idx) => (
        <li key={idx}>{duty}</li>
       ))}

@@ -24,9 +24,13 @@ const TabSection = () => {
           transition={{ type: "linear", duration: 0.5 }}
           className="w-full text-primary md:w-2/3 xl:w-1/2 dark:text-white"
         >
-          <h2 className="text-3xl mb-6 font-display">My name is Aryan, and I love learning, building, and exploring.</h2>
-          <p className="text-lg font-light text-neutral-700 dark:text-neutral-300 mb-4  ">
-          I study CS and business at the University of Michigan with a minor in math. I'm currently most interested in systems computing, financial markets, writing, talking to strangers, and weightlifting. I love public speaking, playing drums, running, and music. In my free time, I work as a part time Wedding MC!
+          <h2 className="text-3xl mb-6 font-display">My name is Dhruv, and I love learning, building, and exploring.</h2>
+          <p className="text-lg font-light text-neutral-700 dark:text-neutral-300 mb-4">
+            I study Computer Engineering at the University of Michigan, where I’m exploring the intersections of systems computing, data-driven modeling, and machine learning, with a minor in Mathematics.
+            <br /><br />
+            I’m deeply interested in machine learning, financial markets, product design and ideation, and how technology shapes human decision-making. I love writing and reading, debating philosophy and politics, and learning from the way people think.
+            <br /><br />
+            Outside of academics, I enjoy practicing the guitar and singing, music production, playing tennis, running, and cooking.
           </p>
           <div className="flex flex-col md:flex-row gap-8">
             <div className="flex-1">
@@ -37,13 +41,11 @@ const TabSection = () => {
                 </p>
               </div>
               <ul className="list-disc pl-10 text-lg font-light text-neutral-700 dark:text-neutral-300">
+                <li>ML</li>
                 <li>Books</li>
-                <li>Music</li>
-                <li>Finance</li>
-                <li>Design</li>
+                <li>Startups</li>
                 <li>Philosophy</li>
-                <li>Art</li>
-                <li>Typography</li>
+                <li>Politics</li>
               </ul>
             </div>
 
@@ -55,11 +57,11 @@ const TabSection = () => {
                 </p>
               </div>
               <ul className="list-disc pl-10 text-lg font-light text-neutral-700 dark:text-neutral-300">
-                <li>Matt Levine</li>
-                <li>Sayaka Murata</li>
-                <li>Dmitri Nesteruk</li>
-                <li>Donella Meadows</li>
-                <li>Peter Attia</li>
+                <li>Khaled Hosseini</li>
+                <li>Sandra Brown</li>
+                <li>Sidney Sheldon</li>
+                <li>Jeffery Archer</li>
+                <li>Firoozeh Dumas</li>
               </ul>
             </div>
 
@@ -71,14 +73,11 @@ const TabSection = () => {
                 </p>
               </div>
               <ul className="list-disc pl-10 text-lg font-light text-neutral-700 dark:text-neutral-300">
-                <li>Fred Again</li>
-                <li>Playboi Carti</li>
-                {/* <li>The Neighbourhood</li> */}
-                <li>Saint Levant</li>
-                <li>Lavern</li>
-                <li>Sudan Archives</li>
-                <li>In This Moment</li>
-                <li>Caroline Polachek</li>
+                <li>Avenoir</li>
+                <li>Bryant Barnes</li>
+                <li>Daniel Caesar</li>
+                <li>Giveon</li>
+                <li>D4vd</li>
               </ul>
             </div>
           </div>
@@ -88,7 +87,7 @@ const TabSection = () => {
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ type: "linear", duration: 0.5 }}
-          className="w-full relative md:w-1/3 xl:w-1/2 md:h-[450px]"
+          className="w-full relative md:w-1/3 xl:w-1/2 md:h-[550px]"
         >
           {!isLoaded && (
             <div className="absolute top-0 rounded-lg left-0 z-50 bg-primary-400 animate-pulse w-full h-full" />
