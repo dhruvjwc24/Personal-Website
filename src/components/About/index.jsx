@@ -77,7 +77,7 @@ const TabSection = () => {
                 <li>Bryant Barnes</li>
                 <li>Daniel Caesar</li>
                 <li>Giveon</li>
-                <li>D4vd</li>
+                <li>Zayn</li>
               </ul>
             </div>
           </div>
