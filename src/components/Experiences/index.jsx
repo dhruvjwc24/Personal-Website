@@ -81,8 +81,6 @@ const TwoColumnCard = () => {
     For details on my experiences, please contact me for my official resume.
   </p>
   </>
-
-
  );
 };
 
