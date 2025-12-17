@@ -94,9 +94,15 @@ const TabSection = () => {
           )}
           <img
             src={images.profile}
-            alt="Aryan Shah"
+            alt="Dhruv"
             onLoad={() => setIsLoaded(true)}
-            className={`w-full h-full object-cover rounded-lg ${isLoaded ? "" : "hidden"}`}
+            /* Keep the rounded frame the same but make the photo black-and-white
+               and move the image content down inside the frame so the top of the
+               head isn't cut off. We use Tailwind's filter utilities for
+               grayscale and `objectPosition` to shift the image, which doesn't
+               affect the container/frame size. */
+            className={`w-full h-full object-cover rounded-lg filter grayscale ${isLoaded ? "" : "hidden"}`}
+            style={{ objectPosition: "center 40%" }}
           />
         </motion.div>
       </div>
