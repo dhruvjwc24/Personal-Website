@@ -5,17 +5,19 @@ const educationData = [
   {
     section: "University of Michigan \nComputer Science and Engineering",
     location: "Ann Arbor, MI",
-    degree: "B.S.E. in Computer Engineering, Minor in Mathematics",
+    degree: "B.S.E. in Data Science, Minor in Mathematics",
     year: "2028",
     coursework: {
       computerScience: [
-        "*EECS 281 - Data Structures & Algorithms",
-        "*EECS 370 - Computer Organization",
+        "*EECS 545 - Machine Learning (CSE)",
+        "*EECS 484 - Database Management Systems",
+        "EECS 281 - Data Structures & Algorithms",
+        "EECS 370 - Computer Organization",
         "EECS 203 - Discrete Mathematics",
         "EECS 280 - Programming and Data Structures",
       ],
       mathematics: [
-        "*MATH 286 - Honors Differential Equations",
+        "*MATH 425 - Introduction to Probability",
         "MATH 215 - Multivariable & Vector Calculus",
         "MATH 214 - Applied Linear Algebra",
         "MATH 116 - Calculus II",
@@ -31,8 +33,7 @@ const activitiesData = {
   location: "University of Michigan",
   items: [
     "V1@Michigan Product Studio",
-    "Propel Impact Consulting",
-    "MFly",
+    "Michigan Recreation Tennis"
   ]
 };
 
@@ -98,7 +99,7 @@ const EducationList = () => {
                 {section.coursework.computerScience && (
                   <>
                     <h3 className="text-xl text-neutral-800 dark:text-neutral-200 mb-2 font-display">
-                      Computer Engineering
+                      Data Science
                     </h3>
                     <ul className="text-sm text-primary-400 list-outside list-disc pl-6 dark:text-neutral-200 mb-4 font-light">
                       {section.coursework.computerScience.map((item, index) => (

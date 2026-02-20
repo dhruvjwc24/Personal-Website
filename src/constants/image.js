@@ -3,6 +3,7 @@ import emailIcon from "../assets/email.svg";
 import githubIcon from "../assets/github.svg";
 import codepenIcon from "../assets/codepen.svg";
 import linkedinIcon from "../assets/linkedin.svg";
+import mediumIcon from "../assets/medium.svg";
 import htmlLogo from "../assets/logo/html-logo.svg";
 import cssLogo from "../assets/logo/css-logo.svg";
 import javascriptLogo from "../assets/logo/javascript-logo.svg";
@@ -31,6 +32,7 @@ export default {
   githubIcon,
   codepenIcon,
   linkedinIcon,
+  mediumIcon,
   htmlLogo,
   cssLogo,
   javascriptLogo,

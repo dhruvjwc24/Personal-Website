@@ -8,6 +8,13 @@ import { Form } from "../ContactModal/Form";
 import { motion } from "framer-motion";
 import useDarkMode from "../../hooks/useDarkMode";
 
+const socials = [
+  { logo: images.linkedinIcon, alt: "LinkedIn", link: "https://www.linkedin.com/in/dhruv-chandna/" },
+  { logo: images.githubIcon, alt: "GitHub", link: "https://github.com/dhruvjwc24" },
+  { logo: images.mediumIcon, alt: "Medium", link: "https://medium.com/@dhruvjwc" },
+  { logo: images.emailIcon, alt: "Email", link: "mailto:dhruvjwc@umich.edu" },
+];
+
 const navlinks = [
   {
     name: "About",
@@ -77,6 +84,19 @@ export default function NavBar() {
             <a href="#home" className="text-primary font-display text-2xl dark:text-white hover:opacity-80 transition-opacity">
               DHRUV C.
             </a>
+          </div>
+          <div className="hidden lg:flex items-center gap-4">
+            {socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary hover:opacity-80 transition-opacity dark:text-white dark:hover:opacity-80"
+              >
+                <img src={social.logo} alt={social.alt} className="h-5 w-5 dark:invert" />
+              </a>
+            ))}
           </div>
           <div className="-mr-2 -my-2 lg:hidden">
             <Popover.Button className="rounded-md p-2 inline-flex items-center justify-center text-primary focus:outline-none focus:ring-2 focus:ring-inset dark:text-white">
@@ -193,7 +213,20 @@ export default function NavBar() {
                     </Popover.Button>
                   </div>
                 </div>
-                <div className="mt-6">
+                <div className="mt-6 flex flex-col gap-6">
+                  <div className="flex gap-4">
+                    {socials.map((social, index) => (
+                      <a
+                        key={index}
+                        href={social.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-2 rounded-full bg-white/10 hover:bg-white/20 transition-colors"
+                      >
+                        <img src={social.logo} alt={social.alt} className="h-5 w-5 invert" />
+                      </a>
+                    ))}
+                  </div>
                   <nav className="grid grid-cols-1 gap-7">
                     {navlinks.map((navlink) => (
                       <a

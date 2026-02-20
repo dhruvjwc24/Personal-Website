@@ -8,8 +8,8 @@ const cardData = [
     period: "Jun. 2024 – Aug. 2024",
     role: "Data Analyst",
     duties: [
-      "Retrieved GitHub interaction data from 660 blockchain organizations using SQL on Google BigQuery.",
-      "Analyzed correlations between project type, funding model, and governance structure on repository growth and engagement."
+      "Built a BigQuery (GCP) SQL analytics pipeline on GH Archive to extract GitHub interaction telemetry for 660 blockchain OSS organizations (2013–2024), producing a longitudinal dataset for ecosystem-scale evaluation.",
+      "Defined and computed a normalized success KPI (Activity Valuation) by filtering bot activity and calculating avg((sum (non-bot interactions) / (years active))); segmented results by Project Type, Funding Model, and Governance Mode to identify the most consistently high-performing organizational profiles.",
     ]
   },
   {
@@ -17,8 +17,8 @@ const cardData = [
     period: "Jun. 2023 – Aug. 2023",
     role: "ML Engineer",
     duties: [
-      "Trained an embedding model with PyTorch SimCLR for high-dimensional Whole Slide Image (WSI) data.",
-      "Developed a multimodal retrieval pipeline to return similar tissue images and associated pathology reports using scikit-learn KNN."
+      "Trained a self-supervised WSI tissue embedding model in PyTorch (SimCLR/Lightly) on 780k unlabeled patches (78 tar shards), using dual-view augmentations, NT-Xent loss, and 128–256 batch training.",
+      "Built a multimodal case-retrieval system that embeds WSIs with a CNN + GNN aggregation and embeds reports with a fine-tuned BERT encoder (augmented via medical NER weighting), then performs fast similarity search with sklearn NearestNeighbors/kNN and cosine similarity, consistently returning highly similar matches (cosine similarity) validated by expert pathologists."
     ]
   }
 ];

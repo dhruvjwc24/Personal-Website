@@ -5,6 +5,21 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
+    heading: "Vacha | V1 F25 Cohort Project",
+    stack: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind"
+    ],
+    bullets: [
+      "Developed Vacha, a CPA-vetted tax-planning platform for high-income earners that models real-estate–driven wealth strategies. Built a full-stack application using Next.js, React, TypeScript, and Tailwind, with backend logic simulating depreciation schedules, 1031 exchanges, and capital-gains based on IRS and MACRS guidelines.",
+      "Implemented verified tax-calculation pipelines incorporating depreciation recapture rules, exchange timelines, and tax-bracket phase-outs. Collaborated with CPAs to validate formulas against current IRS regulations and delivered an MVP capable of generating accurate, scenario-based tax projections."
+    ],
+    websiteLink: "https://tryvacha.com"
+  },
+
+  {
     heading: "ThunderQuote | Senior Research",
     stack: [
       "Dash",
