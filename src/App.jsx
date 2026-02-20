@@ -1,5 +1,4 @@
-import { useState, useEffect } from "react";
-import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
+import { useState } from "react";
 import NavBar from "./components/NavBar";
 import HeroSection from "./components/HeroSection";
 import TabSection from "./components/About";
@@ -12,24 +11,10 @@ import Skills from "./components/Skills";
 import "./index.css";
 import SectionWrapper from "./components/Global/SectionWrapper";
 
-function AppContent() {
+function App() {
   const [loading, setLoading] = useState(true);
-  const lenis = useLenis();
 
-  useEffect(() => {
-    const handleAnchorClick = (e) => {
-      const anchor = e.target.closest?.("a[href^='#']");
-      const href = anchor?.getAttribute("href");
-      if (href && href.length > 1 && lenis) {
-        e.preventDefault();
-        lenis.scrollTo(href, { lerp: 0.08 });
-      }
-    };
-    document.addEventListener("click", handleAnchorClick, true);
-    return () => document.removeEventListener("click", handleAnchorClick, true);
-  }, [lenis]);
-
-  window.addEventListener("load", () => {
+  window.addEventListener("load", (e) => {
     setLoading(true);
   });
 
@@ -85,21 +70,6 @@ function AppContent() {
         </div>
       )}
     </div>
-  );
-}
-
-function App() {
-  return (
-    <ReactLenis
-      root
-      options={{
-        lerp: 0.06,
-        smoothWheel: true,
-        syncTouch: true,
-      }}
-    >
-      <AppContent />
-    </ReactLenis>
   );
 }
 
