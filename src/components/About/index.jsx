@@ -101,7 +101,7 @@ const TabSection = () => {
                head isn't cut off. We use Tailwind's filter utilities for
                grayscale and `objectPosition` to shift the image, which doesn't
                affect the container/frame size. */
-            className={`w-full h-full object-cover rounded-lg filter grayscale ${isLoaded ? "" : "hidden"}`}
+            className={`w-full h-full object-cover rounded-lg ${isLoaded ? "" : "hidden"}`}
             style={{ objectPosition: "center 40%" }}
           />
         </motion.div>
