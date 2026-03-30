@@ -7,6 +7,7 @@ import FeaturedAlternate from "./components/Projects";
 import Footer from "./components/Footer";
 import UsesList from "./components/Education";
 import Skills from "./components/Skills";
+import Blog from "./components/Blog";
 
 import "./index.css";
 import SectionWrapper from "./components/Global/SectionWrapper";
@@ -38,6 +39,9 @@ function App() {
           </SectionWrapper>
           <SectionWrapper id="skills" heading="Skills">
             <Skills />
+          </SectionWrapper>
+          <SectionWrapper id="blog" heading="Blog">
+            <Blog />
           </SectionWrapper>
           {/* <Footer /> */}
         </>
