@@ -4,6 +4,7 @@ import HeroSection from "./components/HeroSection";
 import TabSection from "./components/About";
 import TwoColumnCard from "./components/Experiences";
 import FeaturedAlternate from "./components/Projects";
+import Blog from "./components/Blog";
 import Footer from "./components/Footer";
 import UsesList from "./components/Education";
 import Skills from "./components/Skills";
@@ -35,6 +36,9 @@ function App() {
           </SectionWrapper>
           <SectionWrapper id="projects" heading="Projects">
             <FeaturedAlternate />
+          </SectionWrapper>
+          <SectionWrapper id="blog" heading="Blog">
+            <Blog />
           </SectionWrapper>
           <SectionWrapper id="skills" heading="Skills">
             <Skills />
