@@ -5,36 +5,46 @@ import { motion } from "framer-motion";
 
 const projects = [
   {
-    heading: "Vacha | V1 F25 Cohort Project",
+    heading: "Furnishion | AI Virtual Staging Platform",
     stack: [
       "Next.js",
-      "React",
+      "TypeScript",
+      "Gemini",
+      "Supabase"
+    ],
+    bullets: [
+      "Architected an event-driven virtual-staging pipeline for unlimited batch uploads using 5 Inngest workflows and a durable 6-state lifecycle, with concurrency-safe furniture consistency across room views.",
+      "Engineered an image-safety gate using 9,216-pixel structural comparisons, a 15% alteration threshold, hard object blocklists, and a 1-imperfection cap, with audit records and 2 bounded retries.",
+      "Built 7 API endpoints, 8 PostgreSQL tables, and 18 row-level security policies supporting signed uploads, rights attestation, Gemini-based staging, and 4 furniture packages with 8 reference assets."
+    ]
+  },
+  {
+    heading: "Vacha | Tax Optimization Tooling",
+    stack: [
+      "Next.js",
       "TypeScript",
       "Tailwind"
     ],
     bullets: [
-      "Developed Vacha, a CPA-vetted tax-planning platform for high-income earners that models real-estate–driven wealth strategies. Built a full-stack application using Next.js, React, TypeScript, and Tailwind, with backend logic simulating depreciation schedules, 1031 exchanges, and capital-gains based on IRS and MACRS guidelines.",
-      "Implemented verified tax-calculation pipelines incorporating depreciation recapture rules, exchange timelines, and tax-bracket phase-outs. Collaborated with CPAs to validate formulas against current IRS regulations and delivered an MVP capable of generating accurate, scenario-based tax projections."
+      "Built a CPA-vetted tax-planning platform for high-income earners, modeling depreciation schedules, 1031 exchanges, and capital gains under IRS and MACRS guidelines.",
+      "Implemented calculation pipelines for depreciation recapture, exchange timelines, and tax-bracket phase-outs; collaborated with CPAs to validate formulas and deliver scenario-based projections."
     ],
     websiteLink: "https://tryvacha.com"
   },
 
   {
-    heading: "ThunderQuote | Senior Research",
+    heading: "ThunderQuote | Geospatial Storm Risk Explorer",
     stack: [
-      "Dash",
-      "Flask",
-      "Plotly",
+      "Python",
       "PyTorch",
-      "TensorFlow",
-      "Random Forests",
-      "Gradient Boosting"
+      "D3.js"
     ],
     bullets: [
-      "Scraped and cleaned 70MB+ of storm and insurance claim data from all 50 U.S. states, normalizing, deduplicating, and aligning records for temporal and spatial consistency.",
-      "Developed predictive modeling pipelines reducing mean insurance claim error from ~$1841 to ~$1237, achieving ~8% testing error and outperforming actuarial baselines.",
-      "Built an interactive Dash/Flask dashboard visualizing county-level storm impact for transparent exploration of geographic risk exposure."
-    ]
+      "Cleaned and integrated 70MB+ of storm and insurance-claim records across all 50 states, resolving inconsistent geography and producing deterministic data for 3,129 U.S. counties.",
+      "Evaluated Random Forest, Gradient Boosting, and neural-network regressors, reducing average prediction error from approximately $1,841 to $1,237 and achieving approximately 8% testing error.",
+      "Deployed a responsive D3-Geo research explorer to Vercel with GeoPandas artifacts, methodology documentation, accessibility checks, and 21 automated unit and browser tests."
+    ],
+    websiteLink: "https://thunderquote-research-explorer-dhruvjwcs-projects.vercel.app"
   },
 
   {

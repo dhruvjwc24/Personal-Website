@@ -5,12 +5,12 @@ const educationData = [
   {
     section: "University of Michigan \nComputer Science and Engineering",
     location: "Ann Arbor, MI",
-    degree: "B.S.E. in Data Science, Minor in Mathematics",
+    degree: "B.S.E. in Computer Science, GPA: 3.8",
     year: "2028",
     coursework: {
       computerScience: [
-        "*EECS 545 - Machine Learning (CSE)",
-        "*EECS 484 - Database Management Systems",
+        "EECS 445 - Introduction to Machine Learning",
+        "EECS 491 - Distributed Systems",
         "EECS 281 - Data Structures & Algorithms",
         "EECS 370 - Computer Organization",
         "EECS 203 - Discrete Mathematics",
@@ -99,7 +99,7 @@ const EducationList = () => {
                 {section.coursework.computerScience && (
                   <>
                     <h3 className="text-xl text-neutral-800 dark:text-neutral-200 mb-2 font-display">
-                      Data Science
+                      Computer Science
                     </h3>
                     <ul className="text-sm text-primary-400 list-outside list-disc pl-6 dark:text-neutral-200 mb-4 font-light">
                       {section.coursework.computerScience.map((item, index) => (
