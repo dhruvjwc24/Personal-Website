@@ -4,6 +4,16 @@ import { motion } from "framer-motion";
 
 const cardData = [
   {
+    company: "Effluent, The Wastewater Intelligence Company",
+    period: "Jun. 2026 – Jul. 2026",
+    role: "Product & Go-to-Market Lead",
+    duties: [
+      "Co-developed eSMR automation that maps laboratory results from LIMS into CIWQS-ready reports, reducing an error-prone process from up to 40 hours per month to approximately 10 minutes (~99.6% reduction).",
+      "Fine-tuned a Multivariate Time-Series Graph Neural Network (MTGNN) on BSM2-generated wastewater data to detect anomalies across multivariate SCADA and plant-historian streams.",
+      "Led Bay Area go-to-market efforts by organizing 17 wastewater-facility tours and translating operator feedback into product requirements, pilots, and customer opportunities.",
+    ]
+  },
+  {
     company: "Aspiring Scientists Summer Internship Program (George Mason University)",
     period: "Jun. 2024 – Aug. 2024",
     role: "Data Analyst",
@@ -15,10 +25,10 @@ const cardData = [
   {
     company: "Emerging Diagnostic and Investigative Technologies (Dartmouth Hitchcock Medical Center)",
     period: "Jun. 2023 – Aug. 2023",
-    role: "ML Engineer",
+    role: "Machine Learning Engineer",
     duties: [
-      "Trained a self-supervised WSI tissue embedding model in PyTorch (SimCLR/Lightly) on 780k unlabeled patches (78 tar shards), using dual-view augmentations, NT-Xent loss, and 128–256 batch training.",
-      "Built a multimodal case-retrieval system that embeds WSIs with a CNN + GNN aggregation and embeds reports with a fine-tuned BERT encoder (augmented via medical NER weighting), then performs fast similarity search with sklearn NearestNeighbors/kNN and cosine similarity, consistently returning highly similar matches (cosine similarity) validated by expert pathologists."
+      "Trained a self-supervised whole-slide-image encoder in PyTorch and Lightly using SimCLR on 780K+ unlabeled tissue patches across 78 tar shards, applying dual-view augmentation and NT-Xent loss.",
+      "Built a multimodal case-retrieval system combining CNN–GNN slide embeddings with a fine-tuned BERT report encoder and kNN cosine search, returning clinically similar cases validated by expert pathologists."
     ]
   }
 ];
