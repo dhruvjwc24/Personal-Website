@@ -35,6 +35,10 @@ const navlinks = [
   {
     name: "Skills",
     href: "#skills",
+  },
+  {
+    name: "Blog",
+    href: "#blog",
   }
 ];
 
