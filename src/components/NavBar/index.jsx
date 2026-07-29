@@ -33,6 +33,10 @@ const navlinks = [
     href: "#projects",
   },
   {
+    name: "Blog",
+    href: "#blog",
+  },
+  {
     name: "Skills",
     href: "#skills",
   }
